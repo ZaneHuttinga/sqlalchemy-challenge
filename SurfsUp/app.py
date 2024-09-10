@@ -130,7 +130,7 @@ def temp_from(start):
     return jsonify(temp_stats_list)
 
 @app.route("/api/v1.0/<start>/<end>")
-def temp_from(start,end):
+def temp_from_to(start,end):
     # Create our session (link) from Python to the DB
     session = Session(engine)
 
